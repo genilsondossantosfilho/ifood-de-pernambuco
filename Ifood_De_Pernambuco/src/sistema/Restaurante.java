@@ -1,3 +1,5 @@
+package sistema;
+
 import java.util.ArrayList;
 
 public class Restaurante {
@@ -41,7 +43,7 @@ public class Restaurante {
 	
 	//metodos
 
-	public ArrayList<Pedido> listarPedidos() {
+	public void listarPedidos() {
         for (ItemCardapio item : listaItensCardapio) {
             System.out.println(item);
         }
@@ -73,5 +75,15 @@ public class Restaurante {
 		
 		}
 
+	}
+	
+	public void getListaItensCardapioFormatada() {
+		
+		System.out.println("--- ITENS DISPONÍVEIS ---");
+		
+        for (int i = 0; i < (getListaItensCardapio()).size(); i++) {
+            ItemCardapio item = (getListaItensCardapio()).get(i);
+            System.out.println("[" + i + "] " + item.getNome() + " - R$ " + item.getPreco_fixo());
+        }
 	}
 }

@@ -61,15 +61,15 @@ public class Pedido {
 	
 	//metodos
 	
-	public void adicionarItem(ItemCardapio d) {
+	public void adicionarItemPedido(ItemCardapio d) {
 
 	}
 
-	public void removerItem(ItemCardapio c) {
+	public void removerItemPedido(ItemCardapio c) {
 
 	}
 
-	public boolean calcularPrecoFinal() {
+	public boolean calcularPrecoFinalPedido() {
 
 	}
 
